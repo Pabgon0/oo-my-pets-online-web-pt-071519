@@ -43,6 +43,9 @@ class Owner
       @pets[:cats] << self.find(name)
     end
   end
+    def self.find(name)
+    @@all.find {|cat| cat.name == name}
+  end
   
   def buy_dog(name)
   
