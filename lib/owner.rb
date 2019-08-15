@@ -55,7 +55,7 @@ class Owner
   end
   
   def sell_pets
-    pet.owner = nil
+    Cat.owner = nil
   end
   
   def lists_pets
