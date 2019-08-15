@@ -39,8 +39,8 @@ class Owner
   end
   
   def buy_cat(name)
-    Cat.all.select do |cat|
-      @pets[:cats] << cat(name)
+    if self.cat(name)
+      @pets[:cats] << self.cat(name)
     end
   end
   
