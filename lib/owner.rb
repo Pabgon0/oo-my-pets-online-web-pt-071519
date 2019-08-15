@@ -38,9 +38,9 @@ class Owner
     end
   end
   
-  def buy_cat(name, name2)
+  def buy_cat(name)
     new_cat = Cat.new(name)
-    @pets[:cats] << new_cat
+    pets[:cats] << new_cat
   end
   
   
