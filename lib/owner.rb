@@ -62,10 +62,10 @@ class Owner
     end
   end
   
-  def lists_pets
+  def list_pets
     dog_count = self.dogs.length
     cat_count =self.cats.length
-    return"I have #{dog_count} dog(s), and #{cat_count} cat(s)."
+    return "I have #{dog_count} dog(s), and #{cat_count} cat(s)."
   end
   
 end
