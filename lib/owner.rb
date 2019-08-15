@@ -39,8 +39,8 @@ class Owner
   end
   
   def buy_cat(name)
-    if self.cat(name)
-      @pets[:cats] << self.cat(name)
+    if self.find(name)
+      @pets[:cats] << self.find(name)
     end
   end
   
